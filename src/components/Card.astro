@@ -1,0 +1,33 @@
+---
+const { titel, beskrivelse, deluxe, variant } = Astro.props;
+---
+
+<article class="hey" data-variant={variant}>
+  <h3>{titel}</h3>
+  <p>{beskrivelse}</p>
+  <img src="" alt="" />
+
+  {deluxe == true && <p>Deluxe</p>}
+</article>
+
+<style>
+  article {
+    outline: 2px solid red;
+  }
+
+  h3 {
+    background: var(--clr-background-primary);
+    color: azure;
+  }
+
+  .hey {
+    font-size: 2rem;
+  }
+
+  [data-variant="primary"] {
+    background: darksalmon;
+  }
+  [data-variant="secondary"] {
+    background: lawngreen;
+  }
+</style>

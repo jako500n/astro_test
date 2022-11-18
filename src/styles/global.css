@@ -1,0 +1,7 @@
+:root {
+  /* options */
+  --gray-300: #494949;
+
+  /* aliases / component tokens */
+  --clr-background-primary: var(--gray-300);
+}
